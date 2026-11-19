@@ -1,0 +1,29 @@
+{
+    "displacement": {
+        "MAE": 0.3004213807418787,
+        "RMSE": 0.39256087430673964,
+        "Max_Absolute_Error": 1.162328157108277,
+        "Relative_L2_Error": 0.9959136561837787
+    },
+    "velocity": {
+        "MAE": 1.403482853757461,
+        "RMSE": 1.8129704764845462,
+        "Max_Absolute_Error": 5.3219568924978375,
+        "Relative_L2_Error": 1.0009701318273554
+    },
+    "acceleration": {
+        "MAE": 6.823751994350216,
+        "RMSE": 8.755734635739653,
+        "Max_Absolute_Error": 24.92024226835929,
+        "Relative_L2_Error": 1.0022531803738894
+    },
+    "physics": {
+        "MAE": 3.978417158126831,
+        "RMSE": 5.286964416503906,
+        "Max_Absolute_Residual": 13.508814811706543
+    },
+    "initial_conditions": {
+        "maximum_displacement_error": 0.2104504555463791,
+        "maximum_velocity_error": 0.0560711994767189
+    }
+}

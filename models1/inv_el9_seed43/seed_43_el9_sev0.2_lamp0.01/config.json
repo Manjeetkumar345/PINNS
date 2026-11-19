@@ -1,0 +1,123 @@
+{
+  "inverse_config": {
+    "seed": 43,
+    "lam_data": 1.0,
+    "lam_phys": 0.01,
+    "lam_ic": 1.0,
+    "n_col": 1024,
+    "data_stride": 4,
+    "adapt_steps": 5000,
+    "joint_steps": 24000,
+    "lr_net_adapt": 0.001,
+    "lr_net_joint": 0.0003,
+    "lr_alpha": 0.01,
+    "lr_decay_net": 0.05,
+    "lr_decay_alpha": 0.2,
+    "clipnorm_net": 1.0,
+    "alpha_init": 0.02,
+    "alpha_max": 0.6,
+    "log_every": 500,
+    "loc_threshold": 0.05
+  },
+  "extra": {
+    "initial_checkpoint": "/mnt/k/Projects/PINNS/models1/experiments/optional_checks/seed_42_wmax_8_nfreq_56/weights/healthy_fourier_pinn_lrdecay.keras",
+    "scales_path": "/mnt/k/Projects/PINNS/models1/experiments/optional_checks/seed_42_wmax_8_nfreq_56/weights/healthy_fourier_pinn_lrdecay_scales.json",
+    "damage_case": {
+      "elements": [
+        9
+      ],
+      "severities": [
+        0.2
+      ]
+    },
+    "sensors": "all 10 DOFs, clean displacement",
+    "excitation": [
+      {
+        "floor": 0,
+        "amplitude": 10.0,
+        "angular_frequency": 5.0
+      },
+      {
+        "floor": 1,
+        "amplitude": 8.0,
+        "angular_frequency": 4.0
+      },
+      {
+        "floor": 2,
+        "amplitude": 12.0,
+        "angular_frequency": 6.0
+      },
+      {
+        "floor": 4,
+        "amplitude": 7.0,
+        "angular_frequency": 3.0
+      },
+      {
+        "floor": 5,
+        "amplitude": 9.0,
+        "angular_frequency": 5.0
+      },
+      {
+        "floor": 7,
+        "amplitude": 6.0,
+        "angular_frequency": 2.0
+      },
+      {
+        "floor": 9,
+        "amplitude": 11.0,
+        "angular_frequency": 4.0
+      }
+    ],
+    "masses": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "stiffness": [
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000,
+      1000
+    ],
+    "damping": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "scales": {
+    "T0": 0.21157993442837367,
+    "M0": 1.0,
+    "X0": 0.3941715948658804
+  },
+  "env": {
+    "python": "3.12.3",
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "numpy": "2.5.3",
+    "gpus": [
+      "/physical_device:GPU:0"
+    ]
+  },
+  "checkpoint_selection": "full-grid data + lambda_phys*physics + lambda_ic*IC; no alpha_true used"
+}

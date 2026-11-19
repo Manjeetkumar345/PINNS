@@ -1,0 +1,127 @@
+{
+  "seed_44_el5_sev0.2_lamp0.01": {
+    "final": {
+      "checkpoint": {
+        "model": "/mnt/k/Projects/PINNS/models1/inv_el5_seed44/seed_44_el5_sev0.2_lamp0.01/inverse_final.keras",
+        "scales": "/mnt/k/Projects/PINNS/models1/inv_el5_seed44/seed_44_el5_sev0.2_lamp0.01/inverse_final_scales.json",
+        "alpha_npy": "/mnt/k/Projects/PINNS/models1/inv_el5_seed44/seed_44_el5_sev0.2_lamp0.01/inverse_final_alpha.npy",
+        "alpha_json": "/mnt/k/Projects/PINNS/models1/inv_el5_seed44/seed_44_el5_sev0.2_lamp0.01/inverse_final_alpha.json"
+      },
+      "damage": {
+        "alpha_hat": [
+          0.0009701122659030016,
+          0.0019304548298001148,
+          0.001637870817272134,
+          0.001787714587132312,
+          0.0034053019378296025,
+          0.19801235171942175,
+          0.003988844737170362,
+          0.0026633681727267185,
+          0.002378871962149336,
+          0.0032680124439903625
+        ],
+        "alpha_true": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "true_elements": [
+          5
+        ],
+        "argmax_element": 5,
+        "rank_of_true_elements": {
+          "5": 1
+        },
+        "alpha_error_at_true": {
+          "5": -0.0019876482805782636
+        },
+        "max_abs_alpha_error": 0.003988844737170362,
+        "max_healthy_alpha": 0.003988844737170362,
+        "mean_healthy_alpha": 0.0024478390837748827,
+        "n_healthy_above_threshold": 0,
+        "localization_top1_correct": true
+      },
+      "eval": {
+        "relL2_x": 0.0004590502272380157,
+        "relL2_v_diag": 0.005567271274918133,
+        "relL2_a_diag": 0.0710566436497286,
+        "data_full": 1.8406929250254383e-07,
+        "phys_full": 0.00034779847715877985,
+        "ic_full": 3.168772485131686e-09,
+        "residual_rmse_scaled": 0.011572227426309773,
+        "residual_max_abs_scaled": 0.10509933119724306,
+        "objective": 3.665222836575474e-06
+      }
+    },
+    "selected": {
+      "checkpoint": {
+        "model": "/mnt/k/Projects/PINNS/models1/inv_el5_seed44/seed_44_el5_sev0.2_lamp0.01/inverse_selected.keras",
+        "scales": "/mnt/k/Projects/PINNS/models1/inv_el5_seed44/seed_44_el5_sev0.2_lamp0.01/inverse_selected_scales.json",
+        "alpha_npy": "/mnt/k/Projects/PINNS/models1/inv_el5_seed44/seed_44_el5_sev0.2_lamp0.01/inverse_selected_alpha.npy",
+        "alpha_json": "/mnt/k/Projects/PINNS/models1/inv_el5_seed44/seed_44_el5_sev0.2_lamp0.01/inverse_selected_alpha.json"
+      },
+      "step": 27500,
+      "objective": 3.638458425330112e-06,
+      "damage": {
+        "alpha_hat": [
+          0.001062939217484604,
+          0.0021325193251114944,
+          0.0018095311393051088,
+          0.0019876674695970273,
+          0.003790683816499447,
+          0.1977608901185697,
+          0.004457793889487904,
+          0.0029795787343569083,
+          0.002629624662518644,
+          0.0035254086673282897
+        ],
+        "alpha_true": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "true_elements": [
+          5
+        ],
+        "argmax_element": 5,
+        "rank_of_true_elements": {
+          "5": 1
+        },
+        "alpha_error_at_true": {
+          "5": -0.0022391098814303068
+        },
+        "max_abs_alpha_error": 0.004457793889487904,
+        "max_healthy_alpha": 0.004457793889487904,
+        "mean_healthy_alpha": 0.0027084163246321583,
+        "n_healthy_above_threshold": 0,
+        "localization_top1_correct": true
+      },
+      "eval": {
+        "relL2_x": 0.00047707308137582785,
+        "relL2_v_diag": 0.005574227238965475,
+        "relL2_a_diag": 0.07103183233887474,
+        "data_full": 1.9880658001825372e-07,
+        "phys_full": 0.00034350411767194934,
+        "ic_full": 4.610668592364559e-09,
+        "residual_rmse_scaled": 0.011500562852466919,
+        "residual_max_abs_scaled": 0.1140324099600444,
+        "objective": 3.638458425330112e-06
+      }
+    },
+    "elapsed_s": 4894.36287355423
+  }
+}

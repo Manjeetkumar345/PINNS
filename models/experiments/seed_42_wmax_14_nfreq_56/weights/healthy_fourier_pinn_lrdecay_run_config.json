@@ -1,0 +1,87 @@
+{
+  "seed": 42,
+  "architecture": {
+    "type": "FourierPINN",
+    "dof": 10,
+    "w_max": 14.0,
+    "n_freq": 56,
+    "frequency_min": 0.25,
+    "frequency_spacing": 0.25,
+    "width": 128,
+    "depth": 4,
+    "dtype": "float64"
+  },
+  "training": {
+    "experiment_variant": "within_stage_exponential_lr_decay",
+    "data_steps": 10000,
+    "physics_steps_per_stage": 4000,
+    "physics_weights": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "best_physics_weight": 0.01,
+    "learning_rate": 0.001,
+    "high_phys_lr": 0.0003,
+    "high_phys_threshold": 0.01,
+    "decay_lr_within_stage": true,
+    "stage_lr_decay_factor": 0.05,
+    "n_col": 1024,
+    "log_every": 500,
+    "grad_every": 1000,
+    "test_a_tolerance": 0.01
+  },
+  "scales": {
+    "T0": 0.21157993442837367,
+    "M0": 1.0,
+    "X0": 0.3941715948658804
+  },
+  "test_A_passed": true,
+  "stage_metrics": {
+    "phys_1e-04": {
+      "x": 0.0025852949860667995,
+      "v": 0.027399702849071905,
+      "a": 0.5394031323312756
+    },
+    "phys_1e-03": {
+      "x": 0.00236728364830819,
+      "v": 0.017931872701263597,
+      "a": 0.23251319957259078
+    },
+    "phys_1e-02": {
+      "x": 0.002273114910652429,
+      "v": 0.013389576190009385,
+      "a": 0.1529682863598012
+    },
+    "phys_1e-01": {
+      "x": 0.003037779186348455,
+      "v": 0.01196522151526006,
+      "a": 0.1165181530304654
+    },
+    "phys_1e+00": {
+      "x": 0.019862743362908098,
+      "v": 0.02301066507444894,
+      "a": 0.10107187445500587
+    }
+  },
+  "selected_checkpoint": "/mnt/k/Projects/PINNS/models/experiments/seed_42_wmax_14_nfreq_56/weights/healthy_fourier_pinn_lrdecay.keras",
+  "final_checkpoint": "/mnt/k/Projects/PINNS/models/experiments/seed_42_wmax_14_nfreq_56/weights/healthy_fourier_pinn_lrdecay_final.keras",
+  "selected_checkpoint_metrics": {
+    "x": 0.002273114910652429,
+    "v": 0.013389576190009385,
+    "a": 0.1529682863598012
+  },
+  "save_load_max_abs_difference": 0.0,
+  "model_paths": {
+    "data_warmup": "/mnt/k/Projects/PINNS/models/experiments/seed_42_wmax_14_nfreq_56/weights/healthy_fourier_pinn_lrdecay_data_warmup.keras",
+    "selected": "/mnt/k/Projects/PINNS/models/experiments/seed_42_wmax_14_nfreq_56/weights/healthy_fourier_pinn_lrdecay.keras",
+    "final": "/mnt/k/Projects/PINNS/models/experiments/seed_42_wmax_14_nfreq_56/weights/healthy_fourier_pinn_lrdecay_final.keras",
+    "phys_1e-04": "/mnt/k/Projects/PINNS/models/experiments/seed_42_wmax_14_nfreq_56/weights/healthy_fourier_pinn_lrdecay_phys_1e-04.keras",
+    "phys_1e-03": "/mnt/k/Projects/PINNS/models/experiments/seed_42_wmax_14_nfreq_56/weights/healthy_fourier_pinn_lrdecay_phys_1e-03.keras",
+    "phys_1e-02": "/mnt/k/Projects/PINNS/models/experiments/seed_42_wmax_14_nfreq_56/weights/healthy_fourier_pinn_lrdecay_phys_1e-02.keras",
+    "phys_1e-01": "/mnt/k/Projects/PINNS/models/experiments/seed_42_wmax_14_nfreq_56/weights/healthy_fourier_pinn_lrdecay_phys_1e-01.keras",
+    "phys_1e+00": "/mnt/k/Projects/PINNS/models/experiments/seed_42_wmax_14_nfreq_56/weights/healthy_fourier_pinn_lrdecay_phys_1e+00.keras"
+  }
+}

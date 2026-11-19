@@ -1,0 +1,127 @@
+{
+  "seed_42_el9_sev0.2_lamp0.01": {
+    "final": {
+      "checkpoint": {
+        "model": "/mnt/k/Projects/PINNS/models1/inv_el9/seed_42_el9_sev0.2_lamp0.01/inverse_final.keras",
+        "scales": "/mnt/k/Projects/PINNS/models1/inv_el9/seed_42_el9_sev0.2_lamp0.01/inverse_final_scales.json",
+        "alpha_npy": "/mnt/k/Projects/PINNS/models1/inv_el9/seed_42_el9_sev0.2_lamp0.01/inverse_final_alpha.npy",
+        "alpha_json": "/mnt/k/Projects/PINNS/models1/inv_el9/seed_42_el9_sev0.2_lamp0.01/inverse_final_alpha.json"
+      },
+      "damage": {
+        "alpha_hat": [
+          0.0010069215699528803,
+          0.0020864449874861343,
+          0.0018244837525261625,
+          0.0015432825284377857,
+          0.0015383468049334755,
+          0.0016351052815800108,
+          0.0018735637219119534,
+          0.0026210175262970643,
+          0.00436326007250112,
+          0.1964096457477148
+        ],
+        "alpha_true": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.2
+        ],
+        "true_elements": [
+          9
+        ],
+        "argmax_element": 9,
+        "rank_of_true_elements": {
+          "9": 1
+        },
+        "alpha_error_at_true": {
+          "9": -0.0035903542522852105
+        },
+        "max_abs_alpha_error": 0.00436326007250112,
+        "max_healthy_alpha": 0.00436326007250112,
+        "mean_healthy_alpha": 0.0020547140272918433,
+        "n_healthy_above_threshold": 0,
+        "localization_top1_correct": true
+      },
+      "eval": {
+        "relL2_x": 0.00042733187549810455,
+        "relL2_v_diag": 0.005406380818495773,
+        "relL2_a_diag": 0.07002866299720803,
+        "data_full": 1.812432930871627e-07,
+        "phys_full": 0.0003844695852910113,
+        "ic_full": 3.6601256191451727e-09,
+        "residual_rmse_scaled": 0.0121670170518814,
+        "residual_max_abs_scaled": 0.1138782394217898,
+        "objective": 4.029599271616421e-06
+      }
+    },
+    "selected": {
+      "checkpoint": {
+        "model": "/mnt/k/Projects/PINNS/models1/inv_el9/seed_42_el9_sev0.2_lamp0.01/inverse_selected.keras",
+        "scales": "/mnt/k/Projects/PINNS/models1/inv_el9/seed_42_el9_sev0.2_lamp0.01/inverse_selected_scales.json",
+        "alpha_npy": "/mnt/k/Projects/PINNS/models1/inv_el9/seed_42_el9_sev0.2_lamp0.01/inverse_selected_alpha.npy",
+        "alpha_json": "/mnt/k/Projects/PINNS/models1/inv_el9/seed_42_el9_sev0.2_lamp0.01/inverse_selected_alpha.json"
+      },
+      "step": 29000,
+      "objective": 4.029599271616421e-06,
+      "damage": {
+        "alpha_hat": [
+          0.0010069215699528803,
+          0.0020864449874861343,
+          0.0018244837525261625,
+          0.0015432825284377857,
+          0.0015383468049334755,
+          0.0016351052815800108,
+          0.0018735637219119534,
+          0.0026210175262970643,
+          0.00436326007250112,
+          0.1964096457477148
+        ],
+        "alpha_true": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.2
+        ],
+        "true_elements": [
+          9
+        ],
+        "argmax_element": 9,
+        "rank_of_true_elements": {
+          "9": 1
+        },
+        "alpha_error_at_true": {
+          "9": -0.0035903542522852105
+        },
+        "max_abs_alpha_error": 0.00436326007250112,
+        "max_healthy_alpha": 0.00436326007250112,
+        "mean_healthy_alpha": 0.0020547140272918433,
+        "n_healthy_above_threshold": 0,
+        "localization_top1_correct": true
+      },
+      "eval": {
+        "relL2_x": 0.00042733187549810455,
+        "relL2_v_diag": 0.005406380818495773,
+        "relL2_a_diag": 0.07002866299720803,
+        "data_full": 1.812432930871627e-07,
+        "phys_full": 0.0003844695852910113,
+        "ic_full": 3.6601256191451727e-09,
+        "residual_rmse_scaled": 0.0121670170518814,
+        "residual_max_abs_scaled": 0.1138782394217898,
+        "objective": 4.029599271616421e-06
+      }
+    },
+    "elapsed_s": 3832.534880876541
+  }
+}

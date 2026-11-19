@@ -1,0 +1,48 @@
+{
+  "seed": 0,
+  "architecture": {
+    "type": "FourierPINN",
+    "w_max": 8.0,
+    "n_freq": 56,
+    "width": 128,
+    "depth": 4,
+    "dof": 10
+  },
+  "training": {
+    "data_steps": 10000,
+    "physics_steps_per_stage": 4000,
+    "physics_weights": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0
+    ],
+    "best_physics_weight": 0.01,
+    "learning_rate": 0.001,
+    "high_phys_lr": 0.0003,
+    "high_phys_threshold": 0.01,
+    "n_col": 1024,
+    "log_every": 500,
+    "grad_every": 1000,
+    "test_a_tol": 0.01,
+    "test_A_passed": true
+  },
+  "scales": {
+    "T0": 0.21157993442837367,
+    "M0": 1.0,
+    "X0": 0.3941715948658804
+  },
+  "model_paths": {
+    "data_warmup": "/mnt/k/Projects/PINNS/models/weights/healthy_fourier_pinn_data_warmup.keras",
+    "selected": "/mnt/k/Projects/PINNS/models/weights/healthy_fourier_pinn.keras",
+    "final": "/mnt/k/Projects/PINNS/models/weights/healthy_fourier_pinn_final.keras",
+    "phys_1e-04": "/mnt/k/Projects/PINNS/models/weights/healthy_fourier_pinn_phys_1e-04.keras",
+    "phys_1e-03": "/mnt/k/Projects/PINNS/models/weights/healthy_fourier_pinn_phys_1e-03.keras",
+    "phys_1e-02": "/mnt/k/Projects/PINNS/models/weights/healthy_fourier_pinn_phys_1e-02.keras",
+    "phys_1e-01": "/mnt/k/Projects/PINNS/models/weights/healthy_fourier_pinn_phys_1e-01.keras",
+    "phys_1e+00": "/mnt/k/Projects/PINNS/models/weights/healthy_fourier_pinn_phys_1e+00.keras"
+  },
+  "selected_model_path": "/mnt/k/Projects/PINNS/models/weights/healthy_fourier_pinn.keras",
+  "final_model_path": "/mnt/k/Projects/PINNS/models/weights/healthy_fourier_pinn_final.keras"
+}

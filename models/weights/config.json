@@ -1,0 +1,12 @@
+{
+    "dof": 10,
+    "hidden_layers": 4,
+    "hidden_units": 64,
+    "activation": "tanh",
+    "learning_rate": 0.001,
+    "lambda_data": 1.0,
+    "lambda_physics": 1.0,
+    "lambda_ic": 1.0,
+    "batch_size": 256,
+    "epochs": 2000
+}

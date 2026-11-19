@@ -1,0 +1,125 @@
+{
+  "final": {
+    "checkpoint": {
+      "model": "/mnt/k/Projects/PINNS/models1/inv_el9_seed43/seed_43_el9_sev0.2_lamp0.01/inverse_final.keras",
+      "scales": "/mnt/k/Projects/PINNS/models1/inv_el9_seed43/seed_43_el9_sev0.2_lamp0.01/inverse_final_scales.json",
+      "alpha_npy": "/mnt/k/Projects/PINNS/models1/inv_el9_seed43/seed_43_el9_sev0.2_lamp0.01/inverse_final_alpha.npy",
+      "alpha_json": "/mnt/k/Projects/PINNS/models1/inv_el9_seed43/seed_43_el9_sev0.2_lamp0.01/inverse_final_alpha.json"
+    },
+    "damage": {
+      "alpha_hat": [
+        0.0010089420380857105,
+        0.0020685979018337116,
+        0.001825727168284585,
+        0.0015340937503500096,
+        0.0015363394034767605,
+        0.0016338020948102412,
+        0.0018991146778085206,
+        0.0025414806364293715,
+        0.004373007015058217,
+        0.1964904427326841
+      ],
+      "alpha_true": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2
+      ],
+      "true_elements": [
+        9
+      ],
+      "argmax_element": 9,
+      "rank_of_true_elements": {
+        "9": 1
+      },
+      "alpha_error_at_true": {
+        "9": -0.003509557267315916
+      },
+      "max_abs_alpha_error": 0.004373007015058217,
+      "max_healthy_alpha": 0.004373007015058217,
+      "mean_healthy_alpha": 0.002046789409570792,
+      "n_healthy_above_threshold": 0,
+      "localization_top1_correct": true
+    },
+    "eval": {
+      "relL2_x": 0.00043108112929451264,
+      "relL2_v_diag": 0.005426346103090766,
+      "relL2_a_diag": 0.07017999303366976,
+      "data_full": 1.8443756950381234e-07,
+      "phys_full": 0.00040442403080178583,
+      "ic_full": 4.132141243938806e-09,
+      "residual_rmse_scaled": 0.012478764788134374,
+      "residual_max_abs_scaled": 0.10818271799515937,
+      "objective": 4.2328100187656094e-06
+    }
+  },
+  "selected": {
+    "checkpoint": {
+      "model": "/mnt/k/Projects/PINNS/models1/inv_el9_seed43/seed_43_el9_sev0.2_lamp0.01/inverse_selected.keras",
+      "scales": "/mnt/k/Projects/PINNS/models1/inv_el9_seed43/seed_43_el9_sev0.2_lamp0.01/inverse_selected_scales.json",
+      "alpha_npy": "/mnt/k/Projects/PINNS/models1/inv_el9_seed43/seed_43_el9_sev0.2_lamp0.01/inverse_selected_alpha.npy",
+      "alpha_json": "/mnt/k/Projects/PINNS/models1/inv_el9_seed43/seed_43_el9_sev0.2_lamp0.01/inverse_selected_alpha.json"
+    },
+    "step": 28000,
+    "objective": 4.1447251441412275e-06,
+    "damage": {
+      "alpha_hat": [
+        0.0010729788733938588,
+        0.002218309599318457,
+        0.0019570545558532603,
+        0.0016388144184449692,
+        0.0016396319387512895,
+        0.0017495815827240299,
+        0.002040837644909177,
+        0.0027321661546156188,
+        0.004678610459366708,
+        0.19618454104452362
+      ],
+      "alpha_true": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2
+      ],
+      "true_elements": [
+        9
+      ],
+      "argmax_element": 9,
+      "rank_of_true_elements": {
+        "9": 1
+      },
+      "alpha_error_at_true": {
+        "9": -0.0038154589554763862
+      },
+      "max_abs_alpha_error": 0.004678610459366708,
+      "max_healthy_alpha": 0.004678610459366708,
+      "mean_healthy_alpha": 0.002191998358597485,
+      "n_healthy_above_threshold": 0,
+      "localization_top1_correct": true
+    },
+    "eval": {
+      "relL2_x": 0.00043215505799854025,
+      "relL2_v_diag": 0.005417638814247099,
+      "relL2_a_diag": 0.07015321267615018,
+      "data_full": 1.8535767252131716e-07,
+      "phys_full": 0.0003953865257136281,
+      "ic_full": 5.50221448362955e-09,
+      "residual_rmse_scaled": 0.012338547990314518,
+      "residual_max_abs_scaled": 0.11287333634059452,
+      "objective": 4.1447251441412275e-06
+    }
+  },
+  "elapsed_s": 5395.655842542648
+}

@@ -1,0 +1,127 @@
+{
+  "seed_42_el1_sev0.3_lamp0.1": {
+    "final": {
+      "checkpoint": {
+        "model": "/mnt/k/Projects/PINNS/models1/inverse_experiments/el1_lamp0p1_joint24000/seed_42_el1_sev0.3_lamp0.1/inverse_final.keras",
+        "scales": "/mnt/k/Projects/PINNS/models1/inverse_experiments/el1_lamp0p1_joint24000/seed_42_el1_sev0.3_lamp0.1/inverse_final_scales.json",
+        "alpha_npy": "/mnt/k/Projects/PINNS/models1/inverse_experiments/el1_lamp0p1_joint24000/seed_42_el1_sev0.3_lamp0.1/inverse_final_alpha.npy",
+        "alpha_json": "/mnt/k/Projects/PINNS/models1/inverse_experiments/el1_lamp0p1_joint24000/seed_42_el1_sev0.3_lamp0.1/inverse_final_alpha.json"
+      },
+      "damage": {
+        "alpha_hat": [
+          0.010687628729765303,
+          0.28848291220170275,
+          0.014328351782195685,
+          0.005323055362779627,
+          0.003627059319126023,
+          0.0028744147365947783,
+          0.004808535175308143,
+          0.004856499208031695,
+          0.009149833301150536,
+          0.015795107143550667
+        ],
+        "alpha_true": [
+          0.0,
+          0.3,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "true_elements": [
+          1
+        ],
+        "argmax_element": 1,
+        "rank_of_true_elements": {
+          "1": 1
+        },
+        "alpha_error_at_true": {
+          "1": -0.011517087798297243
+        },
+        "max_abs_alpha_error": 0.015795107143550667,
+        "max_healthy_alpha": 0.015795107143550667,
+        "mean_healthy_alpha": 0.007938942750944719,
+        "n_healthy_above_threshold": 0,
+        "localization_top1_correct": true
+      },
+      "eval": {
+        "relL2_x": 0.001533897709387306,
+        "relL2_v_diag": 0.007498900895913392,
+        "relL2_a_diag": 0.09859001009225742,
+        "data_full": 1.8608679397063674e-06,
+        "phys_full": 0.00032656777509718776,
+        "ic_full": 3.1995124755311594e-09,
+        "residual_rmse_scaled": 0.011213463810953344,
+        "residual_max_abs_scaled": 0.12591821211508103,
+        "objective": 3.4520844961900675e-05
+      }
+    },
+    "selected": {
+      "checkpoint": {
+        "model": "/mnt/k/Projects/PINNS/models1/inverse_experiments/el1_lamp0p1_joint24000/seed_42_el1_sev0.3_lamp0.1/inverse_selected.keras",
+        "scales": "/mnt/k/Projects/PINNS/models1/inverse_experiments/el1_lamp0p1_joint24000/seed_42_el1_sev0.3_lamp0.1/inverse_selected_scales.json",
+        "alpha_npy": "/mnt/k/Projects/PINNS/models1/inverse_experiments/el1_lamp0p1_joint24000/seed_42_el1_sev0.3_lamp0.1/inverse_selected_alpha.npy",
+        "alpha_json": "/mnt/k/Projects/PINNS/models1/inverse_experiments/el1_lamp0p1_joint24000/seed_42_el1_sev0.3_lamp0.1/inverse_selected_alpha.json"
+      },
+      "step": 28500,
+      "objective": 3.3662083172368167e-05,
+      "damage": {
+        "alpha_hat": [
+          0.011204204208507222,
+          0.28798304318415974,
+          0.014890555494142525,
+          0.00558688195020459,
+          0.0038221246391438052,
+          0.0030255450050157566,
+          0.005042562761622334,
+          0.005074143833288655,
+          0.00953897404610794,
+          0.016334019816346815
+        ],
+        "alpha_true": [
+          0.0,
+          0.3,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "true_elements": [
+          1
+        ],
+        "argmax_element": 1,
+        "rank_of_true_elements": {
+          "1": 1
+        },
+        "alpha_error_at_true": {
+          "1": -0.012016956815840252
+        },
+        "max_abs_alpha_error": 0.016334019816346815,
+        "max_healthy_alpha": 0.016334019816346815,
+        "mean_healthy_alpha": 0.008279890194931071,
+        "n_healthy_above_threshold": 0,
+        "localization_top1_correct": true
+      },
+      "eval": {
+        "relL2_x": 0.001594372281939177,
+        "relL2_v_diag": 0.00749507540005792,
+        "relL2_a_diag": 0.0985203713868741,
+        "data_full": 2.0104914335858595e-06,
+        "phys_full": 0.0003163948609141349,
+        "ic_full": 1.2105647368815492e-08,
+        "residual_rmse_scaled": 0.011037426701692062,
+        "residual_max_abs_scaled": 0.10624838149228218,
+        "objective": 3.3662083172368167e-05
+      }
+    },
+    "elapsed_s": 3839.564944267273
+  }
+}
